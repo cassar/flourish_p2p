@@ -51,6 +51,9 @@ gem "bootsnap", require: false
 # A Ruby Library for dealing with money and currency conversion 
 gem "money"
 
+# Net::HTTP provides a rich library which can be used to build HTTP user-agents
+gem "net-http"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
