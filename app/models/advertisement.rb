@@ -1,7 +1,7 @@
 class Advertisement < ApplicationRecord
-  validates :cents, :currency, presence: true
+  validates :cents, presence: true
 
   def amount
-    Money.from_cents(cents, currency).format
+    Money.from_cents(cents).format
   end
 end

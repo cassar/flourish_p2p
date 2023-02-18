@@ -2,8 +2,6 @@
 
 one:
   cents: 10000
-  currency: AUD
 
 two:
   cents: 10000
-  currency: AUD
