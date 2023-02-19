@@ -1,1 +1,8 @@
 <h1>Flourish</h1>
+<p>Flourish is where you can advertise money you no longer need, and organise to transfer it to someone who does.</p>
+<h2>Advertisements</h2>
+<% @advertisements.each do |advertisement| %>
+  <article>
+    <p><%= advertisement.amount %></p>
+  </article>
+<% end %>
