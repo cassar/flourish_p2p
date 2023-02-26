@@ -11,4 +11,12 @@ class AdvertisementTest < ActiveSupport::TestCase
   test "amount returns proper format" do
     assert_equal "$100.00", advertisements(:one).amount
   end
+
+  test "has many claims" do 
+    assert_includes advertisements(:one).claims, claims(:one)
+  end
+
+  test "amount_claimed returns proper amount" do 
+    assert_equal "$10.00", advertisements(:one).amount_claimed
+  end
 end

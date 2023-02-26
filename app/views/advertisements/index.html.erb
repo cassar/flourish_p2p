@@ -3,6 +3,7 @@
 <h2>Advertisements</h2>
 <% @advertisements.each do |advertisement| %>
   <article>
-    <p><%= advertisement.amount %></p>
+    <p><%= advertisement.amount %> Available /
+    <%= advertisement.amount_claimed %> Requested</p>
   </article>
 <% end %>
